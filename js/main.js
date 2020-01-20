@@ -232,4 +232,6 @@ console.log("Mayusculas: " + mayus(cadena));
 
 console.log("--Exercise 4--");
 
-function longWord(stringIn)
+function longWord(stringIn){
+    
+}
