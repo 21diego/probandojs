@@ -192,5 +192,44 @@ console.log("---Strings---");
 
 console.log("--Exercise 1--");
  function reverse(stringIn){
-    
+    var rever = "";
+    for(var i = stringIn.length - 1; i >= 0; i--){
+        rever += stringIn[i];
+    }
+    return rever;
  }
+
+ var cadena = "webmaster";
+ console.log("original: " + cadena);
+ console.log("reverso: " + reverse(cadena));
+
+ console.log("--Exercise 2--");
+
+function alphaOrder (stringIn){
+    var arrayS = stringIn.split("");
+    arrayS.sort();
+    var orderS = arrayS.join("");
+    return orderS;
+}
+
+console.log("original: " + cadena);
+console.log("ordenado: " + alphaOrder(cadena));
+
+console.log("--Exercise 3--");
+
+function mayus(stringIn){
+    var arrayS = stringIn.split(" ");
+    for(var i = 0; i < arrayS.length; i++){
+        arrayS[i] = arrayS[i].charAt(0).toUpperCase() + arrayS[i].slice(1);
+    }
+    var mayusS = arrayS.join(" ");
+    return mayusS;
+}
+
+cadena = "prince of persia";
+console.log("original: " + cadena);
+console.log("Mayusculas: " + mayus(cadena));
+
+console.log("--Exercise 4--");
+
+function longWord(stringIn)
