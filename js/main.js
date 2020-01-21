@@ -1,44 +1,58 @@
-console.log("Starting javascript...");
+console.log("Starting javascript...\n");
 
+//BASICS
 console.log("---Basics---");
-console.log("--Exercise 1--");
+//EXERCISE B1
+console.log("\n--Exercise B1--");
 
 var myName = "Diego Morinigo";
 console.log("Name: " + myName);
 
-console.log("--Exercise 2--");
+//EXERCISE B2
+console.log("\n--Exercise B2--");
 
 var myAge = 24;
 console.log("Age: " + myAge);
 
-console.log("--Exercise 3--");
+//EXERCISE B3
+console.log("\n--Exercise B3--");
 
 var ignasiAge = 32;
 var ageDiff = ignasiAge - myAge;
 console.log("IgnasiAge - MyAge = " + ageDiff);
 
-console.log("--Exercise 4--");
+//EXERCISE B4
+console.log("\n--Exercise B4--");
 
-var age = 21;
-if(myAge < age){
-    console.log("I am not older than 21");
-}
-else {
-    console.log("I am older 21");
+function olderOrNot(ageRef, ageIn) {
+    if(ageIn > ageRef){
+        return ageIn + " is older than " + ageRef;
+    }
+    else {
+        return ageIn + " is not older than " + ageRef;
+    }
+    
 }
 
-console.log("--Exercise 5--");
+var ageRef = 21;
+var ageYounger = 10;
+console.log("My age " + olderOrNot(ageRef,myAge));
+console.log(olderOrNot(ageRef,ageYounger));
+
+//EXERCISE B5
+console.log("\n--Exercise B5--");
 if(myAge < ignasiAge){
-    console.log("Not older");
+    console.log(myAge + " not older than " + ignasiAge);
 }
 else if (myAge = ignasiAge) {
-    console.log("Equal");
+    console.log("Equals");
 }
 else {
-    console.log("Older");
+    console.log(myAge + " is older " + ignasiAge);
 }
 
-console.log("---Arrays---");
+//ARRAYS
+console.log("\n---Arrays---");
 
 function mostrarElems(arrayIn) {
     var texto = "[";
@@ -52,9 +66,11 @@ function mostrarElems(arrayIn) {
     texto += "]";
     return texto;
 }
-console.log("--Exercise 1--");
 
-var arrayName = ["ariel", "lean", "alan","nahuel","lucas","branco","rodri","ivan","gian"];
+//EXERCISE A1
+console.log("\n--Exercise A1--");
+
+var arrayName = ["ariel", "lean", "alan","nahuel","lucas","branco","rodri","ivan","gian","erica","lucio","teo","lucas","roman","rocio","meji","nico","agus","jose","eze","fresco","elias","matias","edu","gabi","nahu","carla","luli","emi"];
 console.log("array desordenado: " + mostrarElems(arrayName));
 arrayName.sort();
 console.log("array ordenado: " + mostrarElems(arrayName));
@@ -65,7 +81,8 @@ for(i = 0; i < arrayName.length; i++){
     console.log("Elemento " + i + ": " + arrayName[i]);
 }
 
-console.log("--Exercise 2--");
+//EXERCISE A2
+console.log("\n--Exercise A2--");
 var arrayAge = [20, 19, 19, 18, 21, 28, 29, 23, 24];
 
 console.log("Todos los numeros con while:");
@@ -99,7 +116,8 @@ for(i = 0; i < arrayAge.length; i++){
     }
 }
 
-console.log("--Exercise 3--");
+//EXERCISE A3
+console.log("\n--Exercise A3--");
 
 function minimoDelArray(arrayIn){
     var minimo;
@@ -118,7 +136,8 @@ var arrayNumbers = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100
 console.log(mostrarElems(arrayNumbers));
 console.log("El minimo es: " + minimoDelArray(arrayNumbers));
 
-console.log("--Exercise 4--");
+//EXERCISE A4
+console.log("\n--Exercise A4--");
 
 function maximoDelArray(arrayIn){
     var maximo;
@@ -137,16 +156,18 @@ var arrayNumbers = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100
 console.log(mostrarElems(arrayNumbers));
 console.log("El maximo es: " + maximoDelArray(arrayNumbers));
 
-console.log("--Exercise 5--");
+//EXERCISE A5
+console.log("\n--Exercise A5--");
 
-function printPosition(arrayIn, index){
+function returnDatInPosition(arrayIn, index){
     return arrayIn[index];
 }
 
 var arrayNumbers = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
-console.log("pos 6: " + printPosition(arrayNumbers, 6));
+console.log("pos 6: " + returnDatInPosition(arrayNumbers, 6));
 
-console.log("--Exercise 6--");
+//EXERCISE A6
+console.log("\n--Exercise A6--");
 
 function repetidos(arrayIn){
     var count = 0;
@@ -166,11 +187,13 @@ function repetidos(arrayIn){
     }
     return arrayRep;
 }
+
 var arrayNumbers = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100];
 var repetidos = repetidos(arrayNumbers);
 console.log("repetidos: " + mostrarElems(repetidos));
 
-console.log("--Exercise 7--");
+//EXERCISE A7
+console.log("\n--Exercise A7--");
 
 function arrayToString(arrayIn){
     var cadena = "";
@@ -188,9 +211,10 @@ function arrayToString(arrayIn){
 var myColor = ["Red", "Green", "White", "Black"];
 console.log("cadena: " + arrayToString(myColor));
 
-console.log("---Strings---");
-
-console.log("--Exercise 1--");
+//STRINGS
+console.log("\n---Strings---");
+//EXERCISE S1
+console.log("\n--Exercise S1--");
  function reverse(stringIn){
     var rever = "";
     for(var i = stringIn.length - 1; i >= 0; i--){
@@ -203,7 +227,8 @@ console.log("--Exercise 1--");
  console.log("original: " + cadena);
  console.log("reverso: " + reverse(cadena));
 
- console.log("--Exercise 2--");
+ //EXERCISE S2
+ console.log("\n--Exercise S2--");
 
 function alphaOrder (stringIn){
     var arrayS = stringIn.split("");
@@ -215,7 +240,8 @@ function alphaOrder (stringIn){
 console.log("original: " + cadena);
 console.log("ordenado: " + alphaOrder(cadena));
 
-console.log("--Exercise 3--");
+//EXERCISE S3
+console.log("\n--Exercise S3--");
 
 function mayus(stringIn){
     var arrayS = stringIn.split(" ");
@@ -230,8 +256,23 @@ cadena = "prince of persia";
 console.log("original: " + cadena);
 console.log("Mayusculas: " + mayus(cadena));
 
-console.log("--Exercise 4--");
+//EXERCISE S4
+console.log("\n--Exercise S4--");
 
 function longWord(stringIn){
-    
+    var auxiliar;
+    var arrayStrings = stringIn.split(" ");
+    for(var i = 0; i < arrayStrings.length; i++){
+        if(i == 0){
+            auxiliar = arrayStrings[i];
+        }
+        else if(arrayStrings[i].length > auxiliar.length){
+            auxiliar = arrayStrings[i];
+        }
+    }
+    return auxiliar;
 }
+
+cadena = "Web Development Tutorial";
+console.log("original: " + cadena);
+console.log("Palabra mas larga: " + longWord(cadena));
