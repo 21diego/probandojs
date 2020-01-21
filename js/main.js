@@ -3,26 +3,26 @@ console.log("Starting javascript...\n");
 //BASICS
 console.log("---Basics---");
 //EXERCISE B1
-console.log("\n--Exercise B1--");
+console.log("\n--Exercise B1--\n>>>>Cree una variable llamada myName  con su nombre como valor");
 
 var myName = "Diego Morinigo";
 console.log("Name: " + myName);
 
 //EXERCISE B2
-console.log("\n--Exercise B2--");
+console.log("\n--Exercise B2--\n>>>>Cree una variable llamada myAge con un número que sea tu edad");
 
 var myAge = 24;
 console.log("Age: " + myAge);
 
 //EXERCISE B3
-console.log("\n--Exercise B3--");
+console.log("\n--Exercise B3--\n>>>>Cree una variable llamada ignasiAge con un valor 32. Cree otra variable llamada ageDiff y asignale como valor la diferencia entre ignasiAge y myAge");
 
 var ignasiAge = 32;
 var ageDiff = ignasiAge - myAge;
 console.log("IgnasiAge - MyAge = " + ageDiff);
 
 //EXERCISE B4
-console.log("\n--Exercise B4--");
+console.log('\n--Exercise B4--\n>>>>Escriba un condicional que compare la variable con su edad con el número 21. Debe imprimir "Tiene más de 21 año" o "No tiene más de 21 años", según su edad.');
 
 function olderOrNot(ageRef, ageIn) {
     if(ageIn > ageRef){
@@ -40,7 +40,7 @@ console.log("My age " + olderOrNot(ageRef,myAge));
 console.log(olderOrNot(ageRef,ageYounger));
 
 //EXERCISE B5
-console.log("\n--Exercise B5--");
+console.log("\n--Exercise B5--\n>>>>");
 if(myAge < ignasiAge){
     console.log(myAge + " not older than " + ignasiAge);
 }
@@ -68,7 +68,7 @@ function mostrarElems(arrayIn) {
 }
 
 //EXERCISE A1
-console.log("\n--Exercise A1--");
+console.log("\n--Exercise A1--\n>>>>");
 
 var arrayName = ["ariel", "lean", "alan","nahuel","lucas","branco","rodri","ivan","gian","erica","lucio","teo","lucas","roman","rocio","meji","nico","agus","jose","eze","fresco","elias","matias","edu","gabi","nahu","carla","luli","emi"];
 console.log("array desordenado: " + mostrarElems(arrayName));
@@ -82,7 +82,7 @@ for(i = 0; i < arrayName.length; i++){
 }
 
 //EXERCISE A2
-console.log("\n--Exercise A2--");
+console.log("\n--Exercise A2--\n>>>>");
 var arrayAge = [20, 19, 19, 18, 21, 28, 29, 23, 24];
 
 console.log("Todos los numeros con while:");
@@ -117,7 +117,7 @@ for(i = 0; i < arrayAge.length; i++){
 }
 
 //EXERCISE A3
-console.log("\n--Exercise A3--");
+console.log("\n--Exercise A3--\n>>>>");
 
 function minimoDelArray(arrayIn){
     var minimo;
@@ -137,7 +137,7 @@ console.log(mostrarElems(arrayNumbers));
 console.log("El minimo es: " + minimoDelArray(arrayNumbers));
 
 //EXERCISE A4
-console.log("\n--Exercise A4--");
+console.log("\n--Exercise A4--\n>>>>");
 
 function maximoDelArray(arrayIn){
     var maximo;
@@ -157,7 +157,7 @@ console.log(mostrarElems(arrayNumbers));
 console.log("El maximo es: " + maximoDelArray(arrayNumbers));
 
 //EXERCISE A5
-console.log("\n--Exercise A5--");
+console.log("\n--Exercise A5--\n>>>>");
 
 function returnDatInPosition(arrayIn, index){
     return arrayIn[index];
@@ -167,7 +167,7 @@ var arrayNumbers = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100
 console.log("pos 6: " + returnDatInPosition(arrayNumbers, 6));
 
 //EXERCISE A6
-console.log("\n--Exercise A6--");
+console.log("\n--Exercise A6--\n>>>>");
 
 function repetidos(arrayIn){
     var count = 0;
@@ -193,7 +193,7 @@ var repetidos = repetidos(arrayNumbers);
 console.log("repetidos: " + mostrarElems(repetidos));
 
 //EXERCISE A7
-console.log("\n--Exercise A7--");
+console.log("\n--Exercise A7--\n>>>>");
 
 function arrayToString(arrayIn){
     var cadena = "";
@@ -214,7 +214,7 @@ console.log("cadena: " + arrayToString(myColor));
 //STRINGS
 console.log("\n---Strings---");
 //EXERCISE S1
-console.log("\n--Exercise S1--");
+console.log("\n--Exercise S1--\n>>>>");
  function reverse(stringIn){
     var rever = "";
     for(var i = stringIn.length - 1; i >= 0; i--){
@@ -228,7 +228,7 @@ console.log("\n--Exercise S1--");
  console.log("reverso: " + reverse(cadena));
 
  //EXERCISE S2
- console.log("\n--Exercise S2--");
+ console.log("\n--Exercise S2--\n>>>>");
 
 function alphaOrder (stringIn){
     var arrayS = stringIn.split("");
@@ -241,7 +241,7 @@ console.log("original: " + cadena);
 console.log("ordenado: " + alphaOrder(cadena));
 
 //EXERCISE S3
-console.log("\n--Exercise S3--");
+console.log("\n--Exercise S3--\n>>>>");
 
 function mayus(stringIn){
     var arrayS = stringIn.split(" ");
@@ -257,7 +257,7 @@ console.log("original: " + cadena);
 console.log("Mayusculas: " + mayus(cadena));
 
 //EXERCISE S4
-console.log("\n--Exercise S4--");
+console.log("\n--Exercise S4--\n>>>>");
 
 function longWord(stringIn){
     var auxiliar;
