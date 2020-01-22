@@ -40,7 +40,7 @@ console.log("My age " + olderOrNot(ageRef,myAge));
 console.log(olderOrNot(ageRef,ageYounger));
 
 //EXERCISE B5
-console.log("\n--Exercise B5--\n>>>>");
+console.log('\n--Exercise B5--\n>>>>Escriba un condicional que compare su edad con la edad de Ignasi. Este condicional deberá comprobar si es mayor, menor o la misma edad, e imprimir, apropiadamente, "Ignasi es mayor que usted", "Ignasi es más joven que usted" o "Tiene la misma edad que Ignasi".');
 if(myAge < ignasiAge){
     console.log(myAge + " not older than " + ignasiAge);
 }
@@ -53,7 +53,7 @@ else {
 
 //ARRAYS
 console.log("\n---Arrays---");
-
+//funcion extra para imprimir el array en un formato
 function mostrarElems(arrayIn) {
     var texto = "[";
     for(var i = 0; i < arrayIn.length; i++){
@@ -68,7 +68,7 @@ function mostrarElems(arrayIn) {
 }
 
 //EXERCISE A1
-console.log("\n--Exercise A1--\n>>>>");
+console.log('\n--Exercise A1--\n>>>>Cree un array con todos los nombres de su clase (incluidos los mentores). Ordenar el array alfabéticamente. Imprima el primer elemento de la matriz en la consola. Imprima el último elemento de la matriz en la consola. Imprima todos los elementos de la matriz en la consola. Use un bucle "for".');
 
 var arrayName = ["ariel", "lean", "alan","nahuel","lucas","branco","rodri","ivan","gian","erica","lucio","teo","lucas","roman","rocio","meji","nico","agus","jose","eze","fresco","elias","matias","edu","gabi","nahu","carla","luli","emi"];
 console.log("array desordenado: " + mostrarElems(arrayName));
@@ -82,7 +82,7 @@ for(i = 0; i < arrayName.length; i++){
 }
 
 //EXERCISE A2
-console.log("\n--Exercise A2--\n>>>>");
+console.log('\n--Exercise A2--\n>>>>Cree un array con todas las edades de los estudiantes de su clase. Itere el array con un ciclo while y luego imprima todas las edades en la consola. Agregue un condicional dentro del ciclo while para imprimir solo números pares. Cambie el ciclo para usar un ciclo "for" en lugar de un ciclo "while".');
 var arrayAge = [20, 19, 19, 18, 21, 28, 29, 23, 24];
 
 console.log("Todos los numeros con while:");
@@ -117,7 +117,7 @@ for(i = 0; i < arrayAge.length; i++){
 }
 
 //EXERCISE A3
-console.log("\n--Exercise A3--\n>>>>");
+console.log("\n--Exercise A3--\n>>>>Escriba una función que reciba un array como parámetro e imprima el número más bajo del array en la consola.");
 
 function minimoDelArray(arrayIn){
     var minimo;
@@ -137,7 +137,7 @@ console.log(mostrarElems(arrayNumbers));
 console.log("El minimo es: " + minimoDelArray(arrayNumbers));
 
 //EXERCISE A4
-console.log("\n--Exercise A4--\n>>>>");
+console.log("\n--Exercise A4--\n>>>>Escriba una función que reciba un array como parámetro e imprima el mayor número del array en la consola.");
 
 function maximoDelArray(arrayIn){
     var maximo;
@@ -157,7 +157,7 @@ console.log(mostrarElems(arrayNumbers));
 console.log("El maximo es: " + maximoDelArray(arrayNumbers));
 
 //EXERCISE A5
-console.log("\n--Exercise A5--\n>>>>");
+console.log("\n--Exercise A5--\n>>>>Escriba una función que reciba dos parámetros, un array y un índice. La función imprimirá el valor del elemento en la posición dada (basada en uno) en la consola.");
 
 function returnDatInPosition(arrayIn, index){
     return arrayIn[index];
@@ -167,7 +167,7 @@ var arrayNumbers = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100
 console.log("pos 6: " + returnDatInPosition(arrayNumbers, 6));
 
 //EXERCISE A6
-console.log("\n--Exercise A6--\n>>>>");
+console.log("\n--Exercise A6--\n>>>>Escriba una función que reciba un array y solo imprima los valores que se repiten.");
 
 function repetidos(arrayIn){
     var count = 0;
@@ -193,7 +193,7 @@ var repetidos = repetidos(arrayNumbers);
 console.log("repetidos: " + mostrarElems(repetidos));
 
 //EXERCISE A7
-console.log("\n--Exercise A7--\n>>>>");
+console.log("\n--Exercise A7--\n>>>>Escriba una función JavaScript simple para unir todos los elementos del siguiente array en una cadena.");
 
 function arrayToString(arrayIn){
     var cadena = "";
@@ -214,7 +214,7 @@ console.log("cadena: " + arrayToString(myColor));
 //STRINGS
 console.log("\n---Strings---");
 //EXERCISE S1
-console.log("\n--Exercise S1--\n>>>>");
+console.log("\n--Exercise S1--\n>>>>Escriba una función de JavaScript que invierta una cadena.");
  function reverse(stringIn){
     var rever = "";
     for(var i = stringIn.length - 1; i >= 0; i--){
@@ -228,7 +228,7 @@ console.log("\n--Exercise S1--\n>>>>");
  console.log("reverso: " + reverse(cadena));
 
  //EXERCISE S2
- console.log("\n--Exercise S2--\n>>>>");
+ console.log("\n--Exercise S2--\n>>>>Escriba una función de JavaScript que devuelva una cadena en orden alfabético.");
 
 function alphaOrder (stringIn){
     var arrayS = stringIn.split("");
@@ -241,7 +241,7 @@ console.log("original: " + cadena);
 console.log("ordenado: " + alphaOrder(cadena));
 
 //EXERCISE S3
-console.log("\n--Exercise S3--\n>>>>");
+console.log("\n--Exercise S3--\n>>>>Escriba una función de JavaScript que convierta la primera letra de cada palabra a mayúsculas.");
 
 function mayus(stringIn){
     var arrayS = stringIn.split(" ");
@@ -257,7 +257,7 @@ console.log("original: " + cadena);
 console.log("Mayusculas: " + mayus(cadena));
 
 //EXERCISE S4
-console.log("\n--Exercise S4--\n>>>>");
+console.log("\n--Exercise S4--\n>>>>Escriba una función de JavaScript que encuentre la palabra más larga en una frase.");
 
 function longWord(stringIn){
     var auxiliar;
